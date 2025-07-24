@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<4.0
+    - python ${{ python_min }}.*
     - hatchling
     - pip
   run:
-    - python >=3.9.0,<4.0.0,<4.0
+    - python >=${{ python_min }},<4.0.0,<4.0
     - httpx >=0.25.2
     - httpx-sse >=0.4.0
     - orjson >=3.10.1
