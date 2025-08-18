@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: langgraph-sdk
-  version: 0.2.0
+  version: "0.2.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/langgraph_sdk-${{ version }}.tar.gz
-  sha256: cd8b5f6595e5571be5cbffd04cf936978ab8f5d1005517c99715947ef871e246
+  sha256: 9484e8071953df75d7aaf9845d82db3595e485af7d5dcc235c9b32c52362e1fc
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
