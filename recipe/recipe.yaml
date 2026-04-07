@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: langgraph-sdk
-  version: "0.3.12"
+  version: "0.3.13"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/langgraph_sdk-${{ version }}.tar.gz
-  sha256: c9c9ec22b3c0fcd352e2b8f32a815164f69446b8648ca22606329f4ff4c59a71
+  sha256: 419ca5663eec3cec192ad194ac0647c0c826866b446073eb40f384f950986cd5
 
 build:
   number: 0
