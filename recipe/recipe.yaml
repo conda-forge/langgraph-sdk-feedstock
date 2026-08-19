@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: langgraph-sdk
-  version: "0.4.2"
+  version: 0.4.3
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/langgraph_sdk-${{ version }}.tar.gz
-  sha256: b88f0f5f6328ac0680d6790614a905b2bcfa257f2276dba4e38f0e86db0aa738
+  sha256: f101cc043ddd7400ceaef66d934c42fa2f0e7d4ea5029754d286260d39038251
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - orjson >=3.11.5
     - langchain-protocol >=0.0.15
     - langchain-core >=1.4.0,<2
-    - websockets >=14,<16
+    - websockets >=14,<17
 tests:
   - python:
       imports:
